@@ -1,0 +1,10 @@
+<mj-section padding="0 32px">
+  <mj-column>
+    <mj-text mj-class="footer-text">
+      {{ companyName }} is a
+      <strong style="font-weight: 700">forward-thinking company</strong>
+      specializing in innovative solutions that drive business growth and efficiency.
+    </mj-text>
+    <mj-spacer height="24px" />
+  </mj-column>
+</mj-section>

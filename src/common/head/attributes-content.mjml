@@ -1,0 +1,76 @@
+<mj-text padding="0" />
+<mj-section padding="0 32px" />
+<mj-image
+    padding="0"
+    height="40px"
+    width="40px"
+    align="left"
+    alt="Subject logo"
+/>
+<mj-social
+    mode="vertical"
+    inner-padding="4px"
+    padding="0"
+/>
+<mj-social-element
+    icon-size="24px"
+    mj-class="text-content"
+    icon-padding="4px 16px 4px 24px"
+    text-padding="4px 24px 4px 0"
+/>
+<mj-button
+    background-color="{{ colorBgButtonBrand }}"
+    color="{{ colorTextButton }}"
+    font-size="18px"
+    font-weight="700"
+    line-height="26px"
+    padding="0"
+    inner-padding="16px 24px"
+    height="58px"
+    border-radius="8px"
+/>
+<mj-wrapper
+    border-bottom="1px solid {{ colorBorderDefault }}"
+    padding="40px 0"
+/>
+<mj-body background-color="{{ colorBgDefault }}" />
+<mj-all font-family="Georgia" />
+
+<mj-class
+    name="text-title"
+    font-size="32px"
+    font-weight="700"
+    line-height="40px"
+    align="left"
+    color="{{ colorTextBrandDark }}"
+/>
+<mj-class
+    name="text-content"
+    font-size="18px"
+    font-weight="400"
+    line-height="26px"
+    color="{{ colorTextDefault }}"
+/>
+<mj-class
+    name="text-description"
+    font-size="18px"
+    font-weight="400"
+    line-height="26px"
+    color="{{ colorTextDescription }}"
+/>
+<mj-class
+    name="footer-text"
+    font-size="14px"
+    font-weight="400"
+    line-height="20px"
+    color="{{ colorTextDescription }}"
+    align="center"
+/>
+<mj-class
+    name="footer-text-links"
+    font-size="14px"
+    font-weight="400"
+    line-height="20px"
+    color="{{ colorTextDefault }}"
+    align="center"
+/>

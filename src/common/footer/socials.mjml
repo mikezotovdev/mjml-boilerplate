@@ -1,0 +1,20 @@
+<mj-section padding="0 16px">
+  <mj-column>
+    <mj-social>
+      <mj-social-element
+          src="{{ emailIconUrl }}"
+          name="email"
+          href="mailto:{{supportEmail}}"
+      >
+        {{supportEmail}}
+      </mj-social-element>
+      <mj-social-element
+          src="{{ telegramLogoUrl }}"
+          name="blog"
+          href="https://t.me/{{supportTelegram}}"
+      >
+        https://t.me/{{supportTelegram}}
+      </mj-social-element>
+    </mj-social>
+  </mj-column>
+</mj-section>

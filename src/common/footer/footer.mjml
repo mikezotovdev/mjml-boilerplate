@@ -1,0 +1,4 @@
+<mj-section padding="48px 0">
+    <mj-include path="./notice.mjml" />
+    <mj-include path="./socials.mjml" />
+</mj-section>

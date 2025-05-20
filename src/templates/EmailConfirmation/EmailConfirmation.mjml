@@ -1,0 +1,50 @@
+<mjml>
+  <mj-head>
+    <mj-title> ✅ Confirm Your Email – Let’s Activate the Power </mj-title>
+    <mj-preview> Just one click to calibrate your access. If this isn’t your account, ignore and walk away like a sigma. </mj-preview>
+
+    <mj-include path="../../common/head/attributes.mjml" />
+  </mj-head>
+  <mj-body>
+    <mj-include path="../../common/header/header.mjml" />
+    <!-- Body content -->
+    <mj-wrapper>
+      <!-- Subject logo -->
+      <mj-section>
+        <mj-column>
+          <mj-image src="{{ subjectEmailIconUrl }}" />
+          <mj-spacer height="16px" />
+        </mj-column>
+      </mj-section>
+      <!-- Subject -->
+      <mj-section>
+        <mj-column>
+          <mj-text mj-class="text-title"> Welcome to {{ companyName }}! </mj-text>
+          <mj-spacer height="24px" />
+        </mj-column>
+      </mj-section>
+      <!-- Content -->
+      <mj-section>
+        <mj-column>
+          <mj-text mj-class="text-content"> Hello! </mj-text>
+          <mj-spacer height="12px" />
+          <mj-text mj-class="text-content">
+            We’re pumped to have you at {{ companyName }}. Before diving in, please confirm your email {{ userEmail }}.
+            It keeps your account safe — and lets us help if you ever forget your credentials.
+          </mj-text>
+          <mj-spacer height="24px" />
+          <mj-button href="{{link}}"> Confirm your email </mj-button>
+          <mj-spacer height="24px" />
+          <mj-text mj-class="text-content">
+            Not your account? No problem. Just ignore this message and carry on like nothing happened. 🧼
+          </mj-text>
+          <mj-spacer height="24px" />
+        </mj-column>
+      </mj-section>
+
+      <mj-include path="../../common/footer/regards.mjml" />
+    </mj-wrapper>
+
+    <mj-include path="../../common/footer/footer.mjml" />
+  </mj-body>
+</mjml>

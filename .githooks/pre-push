@@ -1,0 +1,22 @@
+#!/bin/sh
+echo "Running Biome format check before push..."
+
+# Run Biome in format mode (does not modify files, only reports issues)
+bun biome format .
+
+if [ $? -ne 0 ]; then
+    echo "Biome detected formatting issues. Fix them before pushing. Try to use `bun run biome-fix`"
+    exit 1
+fi
+
+echo "Running Biome lint check before push..."
+
+# Run Biome in lint mode (does not modify files, only reports issues)
+bun biome lint .
+
+if [ $? -ne 0 ]; then
+    echo "Biome detected lint issues. Fix them before pushing. Try to use `bun run biome-fix`"
+    exit 1
+fi
+
+echo "All checks passed. Proceeding with push."

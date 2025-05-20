@@ -1,0 +1,14 @@
+<mj-section
+    padding="24px"
+    background-color="{{ colorBgBrand }}"
+    border-radius="8px 8px 0 0"
+>
+    <mj-image
+        height="24px"
+        width="71px"
+        align="left"
+        alt="{{ companyName }}"
+        src="{{ logoUrl }}"
+        href="{{ appLink }}"
+    />
+</mj-section>

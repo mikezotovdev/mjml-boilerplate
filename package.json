@@ -1,0 +1,74 @@
+{
+  "name": "mjml-boilerplate",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A modern MJML boilerplate for building responsive HTML email templates using Bun and TypeScript, with support for minification, Mustache-style templating, and local variable preview/interpolation.",
+  "author": "Mike Zotov <mikezotovdev@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/mikezotovdev/mjml-boilerplate#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikezotovdev/mjml-boilerplate"
+  },
+  "bugs": {
+    "url": "https://github.com/mikezotovdev/mjml-boilerplate/issues"
+  },
+  "keywords": [
+    "mjml",
+    "email",
+    "email template",
+    "html email",
+    "responsive email",
+    "boilerplate",
+    "typescript",
+    "bun",
+    "biome",
+    "mustache variables",
+    "templating",
+    "template variables",
+    "html-minifier",
+    "interpolation",
+    "mjml boilerplate",
+    "mjml template",
+    "billy herrington",
+    "gachi"
+  ],
+  "scripts": {
+    "build": "bun run cleanup && tsc && bun run build-templates && bun run post-build",
+    "build-templates": "bun run build.templates.ts",
+
+    "cleanup": "bun run clean-dist && bun run clean-public",
+    "clean-dist": "rm -rf dist",
+    "clean-public": "rm -rf public",
+    "clean-deps": "rm -rf node_modules bun.lockb",
+
+    "post-build": "bun run post-build-move && bun run post-build-minify && bun run post-build-cleanup",
+    "post-build-minify": "bun run postbuild.minify.ts",
+    "post-build-move": "bun run postbuild.move.ts",
+    "post-build-cleanup": "bun run postbuild.cleanup.ts",
+
+    "preview": "bun run build && bun run build.preview.ts",
+
+    "fix": "bun run format && bun run lint",
+    "lint": "bunx biome lint --write .",
+    "format": "bunx biome format --write .",
+
+    "setup-hooks": "mkdir -p .git/hooks && cp .githooks/pre-push .git/hooks/pre-push && chmod +x .git/hooks/pre-push",
+    "postinstall": "bun run setup-hooks"
+  },
+  "engines": {
+    "bun": ">=1.1.0",
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "mjml": "^4.15.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.0.0-beta.4",
+    "@types/html-minifier": "^4.0.5",
+    "@types/mjml": "^4.7.4",
+    "@types/node": "^22.15.18",
+    "html-minifier": "^4.0.0",
+    "typescript": "^5.8.3"
+  }
+}

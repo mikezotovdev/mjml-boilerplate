@@ -1,0 +1,56 @@
+<mjml>
+    <mj-head>
+      <mj-title> 🤖 Welcome to {{ companyName }}, {{ firstName }} – Time to Train Hard 💪 </mj-title>
+      <mj-preview> You're in. The models are sweating, the prompts are flexing, and the API is ready. Let’s go. </mj-preview>
+
+      <mj-include path="../../common/head/attributes.mjml" />
+    </mj-head>
+  <mj-body>
+    <mj-include path="../../common/header/header.mjml" />
+    <!-- Body content -->
+    <mj-wrapper>
+      <!-- Subject logo -->
+      <mj-section>
+        <mj-column>
+          <mj-image src="{{ subjectWelcomeIconUrl }}" />
+          <mj-spacer height="16px" />
+        </mj-column>
+      </mj-section>
+      <!-- Subject -->
+      <mj-section>
+        <mj-column>
+          <mj-text mj-class="text-title"> Welcome to {{ companyName }}! </mj-text>
+          <mj-spacer height="24px" />
+        </mj-column>
+      </mj-section>
+      <!-- Content -->
+      <mj-section>
+        <mj-column>
+          <mj-text mj-class="text-content"> Hello, {{ firstName }}! </mj-text>
+          <mj-spacer height="12px" />
+          <mj-text mj-class="text-content">
+            You’ve completed registration — the prompt was clean, and the output? Perfect.
+          </mj-text>
+          <mj-spacer height="12px" />
+          <mj-text mj-class="text-content">
+            {{ companyName }} builds powerful AI tools for devs and creators who like their pipelines
+            tight and their results jacked. We've been pushing weights (and models) long before it was cool.
+          </mj-text>
+          <mj-spacer height="12px" />
+          <mj-text mj-class="text-content">
+            🐸 Follow us on <a
+                  href="https://t.me/{{supportTelegram}}"
+                  style="color: {{ colorTextLink }}; text-decoration: none"
+                  target="_blank"
+          >Telegram</a> and stay tuned for fresh releases, updates, and raw compute.
+          </mj-text>
+          <mj-spacer height="24px" />
+        </mj-column>
+      </mj-section>
+
+      <mj-include path="../../common/footer/regards.mjml" />
+    </mj-wrapper>
+
+    <mj-include path="../../common/footer/footer.mjml" />
+  </mj-body>
+</mjml>

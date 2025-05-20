@@ -1,0 +1,9 @@
+<mj-section>
+  <mj-column>
+    <mj-text
+        mj-class="text-description"
+        color="{{ colorTextBrand }}"
+    >Stay powerful,</mj-text>
+    <mj-text mj-class="text-description">{{ companyName }} 🤖💪</mj-text>
+  </mj-column>
+</mj-section>
